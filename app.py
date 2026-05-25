@@ -13,9 +13,9 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import streamlit as st
 
-PRIORITY_ORDER = ["1 - Critical", "2 - High", "3 - Moderate", "4 - Low"]
-
 from etl_core import run_etl as _run_etl_core
+
+PRIORITY_ORDER = ["1 - Critical", "2 - High", "3 - Moderate", "4 - Low"]
 
 
 @st.cache_data

@@ -58,11 +58,10 @@
     "sla_pct": 81.4
   },
   "gargalo_equipe": {
-    "assignment_group": "Group 70",
-    "volume": 7369,
-    "mttr_horas": 76.4,
-    "sla_pct": 81.4,
-    "pressao": 137063.39999999997
+    "assignment_group": "Group 10",
+    "volume": 271,
+    "mttr_horas": 702.3378228782287,
+    "sla_pct": 14.4
   },
   "pct_volume_sintoma_lider": 37.8,
   "top_5_equipes_volume": [

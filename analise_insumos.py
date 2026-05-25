@@ -1,6 +1,6 @@
 """
 Gera insumos verídicos para o Relatório de Engenharia (PDF).
-Execute: python analise_insumos.py
+Execute: python analise_insumos.py && python gerar_relatorio_md.py
 """
 
 import json
@@ -56,11 +56,12 @@ def analisar(fato: pd.DataFrame, meta: dict) -> dict:
 
     media_mttr = fato["mttr_horas"].mean()
 
-    # Gargalo operacional: alto volume e baixo SLA (impacto real na fila)
-    cand = equipes_grandes.copy()
-    cand["pressao"] = cand["volume"] * (100 - cand["sla_pct"])
+    # Gargalo: equipe com volume relevante (>=200) e pior SLA
+    cand = equipes[equipes["volume"] >= 200].copy()
     gargalo_equipe = (
-        cand.sort_values("pressao", ascending=False).iloc[0].to_dict() if len(cand) else {}
+        cand.sort_values(["sla_pct", "volume"], ascending=[True, False]).iloc[0].to_dict()
+        if len(cand)
+        else {}
     )
 
     maior_volume = equipes.sort_values("volume", ascending=False).iloc[0].to_dict()
