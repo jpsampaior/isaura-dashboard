@@ -1,0 +1,137 @@
+{
+  "meta_etl": {
+    "linhas_log": 119998,
+    "chamados_unicos": 20769,
+    "preenchidos_closed_at": 1418,
+    "periodo_inicio": "2016-02-29",
+    "periodo_fim": "2016-05-13",
+    "dias_calendario": 75
+  },
+  "kpis": {
+    "total_chamados": 20769,
+    "mttr_medio_horas": 186.5,
+    "mttr_mediana_horas": 30.0,
+    "sla_conformidade_pct": 60.6,
+    "chamados_criticos": 220,
+    "pct_criticos": 1.1
+  },
+  "prioridade_distribuicao": {
+    "1 - Critical": 220,
+    "2 - High": 337,
+    "3 - Moderate": 19554,
+    "4 - Low": 658
+  },
+  "sintoma_mais_recorrente": {
+    "sintoma": "Symptom 491",
+    "volume": 7856
+  },
+  "top_5_sintomas": [
+    {
+      "sintoma": "Symptom 491",
+      "volume": 7856
+    },
+    {
+      "sintoma": "Symptom 534",
+      "volume": 1285
+    },
+    {
+      "sintoma": "Symptom 116",
+      "volume": 425
+    },
+    {
+      "sintoma": "Symptom 387",
+      "volume": 384
+    },
+    {
+      "sintoma": "Symptom 4",
+      "volume": 368
+    }
+  ],
+  "mes_pico_aberturas": {
+    "mes": "2016-03",
+    "volume": 8995
+  },
+  "equipe_maior_volume": {
+    "assignment_group": "Group 70",
+    "volume": 7369,
+    "mttr_horas": 76.4336250961234,
+    "sla_pct": 81.4
+  },
+  "gargalo_equipe": {
+    "assignment_group": "Group 70",
+    "volume": 7369,
+    "mttr_horas": 76.4,
+    "sla_pct": 81.4,
+    "pressao": 137063.39999999997
+  },
+  "pct_volume_sintoma_lider": 37.8,
+  "top_5_equipes_volume": [
+    {
+      "assignment_group": "Group 70",
+      "volume": 7369,
+      "mttr_horas": 76.4,
+      "sla_pct": 81.4
+    },
+    {
+      "assignment_group": "Group 25",
+      "volume": 1080,
+      "mttr_horas": 255.4,
+      "sla_pct": 42.8
+    },
+    {
+      "assignment_group": "Group 39",
+      "volume": 995,
+      "mttr_horas": 80.0,
+      "sla_pct": 63.8
+    },
+    {
+      "assignment_group": "Group 24",
+      "volume": 907,
+      "mttr_horas": 135.5,
+      "sla_pct": 62.8
+    },
+    {
+      "assignment_group": "Group 23",
+      "volume": 745,
+      "mttr_horas": 242.8,
+      "sla_pct": 57.7
+    }
+  ],
+  "pior_5_equipes_sla": [
+    {
+      "assignment_group": "Group 9",
+      "volume": 71,
+      "mttr_horas": 4192.6,
+      "sla_pct": 2.8
+    },
+    {
+      "assignment_group": "Group 75",
+      "volume": 53,
+      "mttr_horas": 689.3,
+      "sla_pct": 5.7
+    },
+    {
+      "assignment_group": "Group 12",
+      "volume": 98,
+      "mttr_horas": 351.7,
+      "sla_pct": 7.1
+    },
+    {
+      "assignment_group": "Group 10",
+      "volume": 271,
+      "mttr_horas": 702.3,
+      "sla_pct": 14.4
+    },
+    {
+      "assignment_group": "Group 3",
+      "volume": 89,
+      "mttr_horas": 1330.0,
+      "sla_pct": 18.0
+    }
+  ],
+  "qualidade_dados": {
+    "sem_assignment_group": 2157,
+    "sem_u_symptom": 4931,
+    "media_mttr_geral": 186.5
+  }
+}
